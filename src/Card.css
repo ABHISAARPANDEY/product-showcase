@@ -1,0 +1,55 @@
+/* Card Styling */
+.Car_card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    margin: 0 auto;
+    max-width: 320px; /* Maximum card width */
+  }
+  
+  .Car_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+  }
+  
+  .Car_card h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .Car_card img {
+    width: 100%; /* Image takes up full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit the height of the image */
+    object-fit: cover; /* Crop the image to cover the area without stretching */
+    border-bottom: 2px solid #f0f0f0;
+    transition: transform 0.3s ease;
+  }
+  
+  .Car_card img:hover {
+    transform: scale(1.05); /* Zoom effect */
+  }
+  
+  /* Grid Layout */
+
+  
+  @media screen and (max-width: 480px) {
+    .Car_card h1 {
+      font-size: 1.2rem;
+    }
+  
+    .Car_card img {
+      max-height: 150px; /* Adjust image size for smaller screens */
+    }
+  }
+  
